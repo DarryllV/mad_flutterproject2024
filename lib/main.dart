@@ -30,11 +30,11 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('First Page'),
+        title: Text('Login page'),
         ),
         body: Center(
           child: ElevatedButton(
-            child: Text('Next Page'),
+            child: Text('Log in (Placeholder until i implement it for real)'),
             onPressed: () {
               //initialize the data
               MyData data = new MyData('John','Smith');

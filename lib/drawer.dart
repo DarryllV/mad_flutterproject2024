@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class MyDrawer extends StatelessWidget {
+  final Function onTap;
+  MyDrawer({this.onTap});
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -49,16 +52,19 @@ class MyDrawer extends StatelessWidget {
             ListTile(
               leading: Icon(Icons.home),
               title: Text('Homepage'),
+              onTap: () => onTap(context, 0, 'Home'),
             ),
 
             ListTile(
               leading: Icon(Icons.credit_card),
               title: Text('Ezlink'),
+              onTap: () => onTap(context, 0, 'Ezlink'),
             ),
 
             ListTile(
               leading: Icon(Icons.person),
               title: Text('Profile'),
+              onTap: () => onTap(context, 0, 'Profile'),
             ),
             
           ],

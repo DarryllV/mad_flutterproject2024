@@ -18,6 +18,8 @@ class Homepage extends StatefulWidget {
 
   class _HomepageState extends State<Homepage> {
     String title = 'Home';
+    int index = 0;
+    List<Widget> list = [Home(), Ezlink(), Profile()];
 
     @override
     Widget build(BuildContext context) {
@@ -27,8 +29,16 @@ class Homepage extends StatefulWidget {
           appBar: AppBar(
             title: Text(title),
           ),
-          body: Home(),
-          drawer: MyDrawer(),
+          // body: Home(),
+          // drawer: MyDrawer(),
+          body: list[index],
+          drawer: MyDrawer(onTap: (context, i, txt){
+            setState(() { index = i;
+                          title = txt;
+                          Navigator.pop(context);
+            });
+          }
+          ),
         ),
       );
     }
