@@ -39,7 +39,7 @@ class LoginPage extends StatelessWidget {
               //initialize the data
               MyData data = new MyData('John','Smith');
               Navigator.push(context,
-              MaterialPageRoute(builder: (context) => homepage(data: data)),
+              MaterialPageRoute(builder: (context) => Homepage(data: data)),
               );
             },
           ),
