@@ -19,7 +19,7 @@ class Homepage extends StatefulWidget {
   class _HomepageState extends State<Homepage> {
     String title = 'Home';
     int index = 0;
-    List<Widget> list = [Home(), Ezlink(), Profile()];
+    List<Widget> list = [Home(), Ezlink(), Profile(), LoginPage()];
 
     @override
     Widget build(BuildContext context) {

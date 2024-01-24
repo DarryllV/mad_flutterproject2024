@@ -85,7 +85,7 @@ class LoginPage extends StatelessWidget {
               ),
 
               ElevatedButton(
-                child: Text('Log in (Placeholder until i implement it for real)'),
+                child: Text('Log in'),
                 onPressed: () {
                   //initialize the data
                   MyData data = new MyData('John','Smith');

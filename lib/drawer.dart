@@ -67,6 +67,11 @@ class MyDrawer extends StatelessWidget {
               onTap: () => onTap(context, 2, 'Profile'),
             ),
             
+            ListTile(
+              leading: Icon(Icons.logout),
+              title: Text('Logout'),
+              onTap: () => onTap(context, 3, ""),
+            ),
           ],
         )
       ),
