@@ -32,17 +32,43 @@ class LoginPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Login page'),
         ),
-        body: Center(
-          child: ElevatedButton(
-            child: Text('Log in (Placeholder until i implement it for real)'),
-            onPressed: () {
-              //initialize the data
-              MyData data = new MyData('John','Smith');
-              Navigator.push(context,
-              MaterialPageRoute(builder: (context) => Homepage(data: data)),
-              );
-            },
-          ),
+        body: Align(
+          alignment: Alignment.center,  
+            child: Column(
+              children: [
+                TextField(decoration: InputDecoration(
+                  hintText: 'Username',
+                  hintStyle: TextStyle(
+                    fontWeight: FontWeight.w300,
+                    color: Colors.grey[600],
+                  ),
+                  enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.grey[700],
+                    ),
+                  ),
+                  focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(
+                      color: Colors.green[100],
+                    ),
+                  ),
+                ),
+
+                ),
+                
+              ElevatedButton(
+                child: Text('Log in (Placeholder until i implement it for real)'),
+                onPressed: () {
+                  //initialize the data
+                  MyData data = new MyData('John','Smith');
+                  Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => Homepage(data: data)),
+                );
+              },
+            ),
+
+              ],
+            ),
         ),
     );
   }
