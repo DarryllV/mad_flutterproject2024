@@ -58,13 +58,13 @@ class MyDrawer extends StatelessWidget {
             ListTile(
               leading: Icon(Icons.credit_card),
               title: Text('Ezlink'),
-              onTap: () => onTap(context, 0, 'Ezlink'),
+              onTap: () => onTap(context, 1, 'Ezlink'),
             ),
 
             ListTile(
               leading: Icon(Icons.person),
               title: Text('Profile'),
-              onTap: () => onTap(context, 0, 'Profile'),
+              onTap: () => onTap(context, 2, 'Profile'),
             ),
             
           ],

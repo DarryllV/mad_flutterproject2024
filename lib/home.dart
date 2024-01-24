@@ -6,7 +6,7 @@ class Home extends StatelessWidget {
     return Container(
       child: Container(
         child: Center(
-          child: Text('Home',
+          child: Text('This is the homepage',
             style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold)
             ),
         ),
