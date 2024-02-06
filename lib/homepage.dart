@@ -5,6 +5,7 @@ import 'home.dart';
 import 'profile.dart';
 import 'ezlink.dart';
 import 'history.dart';
+import 'aboutus.dart';
 
 class Homepage extends StatefulWidget {
   final MyData data; //to hold data passed onto this page
@@ -20,7 +21,7 @@ class Homepage extends StatefulWidget {
   class _HomepageState extends State<Homepage> {
     String title = 'Home';
     int index = 0;
-    List<Widget> list = [Home(), Ezlink(), Profile(), History(), LoginPage()];
+    List<Widget> list = [Home(), Ezlink(), Profile(), History(), LoginPage(), AboutUs()];
 
     @override
     Widget build(BuildContext context) {

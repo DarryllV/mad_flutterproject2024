@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project/history.dart';
 import 'package:flutter_project/topup.dart';
 
 class Ezlink extends StatelessWidget {
@@ -90,22 +91,40 @@ class Ezlink extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   ElevatedButton(
-                      child: Text('Back'),
-                      onPressed: () {
-                        //initialize the data
-                        Navigator.pop(context);
-                    },
-                  ),
-
-                  SizedBox(width: 20,),
-
-                  ElevatedButton(
                       child: Text('Top up balance'),
                       onPressed: () {
                         //initialize the data
                         Navigator.push(context,
                         MaterialPageRoute(builder: (context) => TopUp()),
                       );
+                    },
+                  ),
+
+                  SizedBox(width: 20,),
+
+                  ElevatedButton(
+                      child: Text('View Usage History'),
+                      onPressed: () {
+                        //initialize the data
+                        Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => History()),
+                      );
+                    },
+                  ),
+                  
+                ],
+              ),
+
+              SizedBox(height: 20,),
+
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(
+                      child: Text('Back'),
+                      onPressed: () {
+                        //initialize the data
+                        Navigator.pop(context);
                     },
                   ),
                   

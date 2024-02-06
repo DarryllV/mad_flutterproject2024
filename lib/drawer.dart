@@ -70,13 +70,19 @@ class MyDrawer extends StatelessWidget {
             ListTile(
               leading: Icon(Icons.history),
               title: Text('History'),
-              onTap: () => onTap(context, 3, ""),
+              onTap: () => onTap(context, 3, "History"),
             ),
 
             ListTile(
               leading: Icon(Icons.logout),
               title: Text('Logout'),
               onTap: () => onTap(context, 4, ""),
+            ),
+
+            ListTile(
+              leading: Icon(Icons.person),
+              title: Text('About Us'),
+              onTap: () => onTap(context, 5, ""),
             ),
           ],
         )
