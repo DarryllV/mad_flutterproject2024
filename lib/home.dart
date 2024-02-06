@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project/ezlink.dart';
+import 'package:flutter_project/topup.dart';
 
 class Home extends StatelessWidget {
   @override
@@ -35,6 +36,17 @@ class Home extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => Ezlink()),
+                );
+              },
+            ),
+
+            ElevatedButton(
+              child: Text('Top Up Ezlink'),
+              onPressed: () {
+              //initialize the data
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => TopUp()),
                 );
               },
             ),
