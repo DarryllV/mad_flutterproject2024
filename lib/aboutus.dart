@@ -46,8 +46,8 @@ class AboutUs extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               ElevatedButton(
-                onPressed: null,
                 child: Text('Our Website'),
+                onPressed: null
                 ),
               
               ElevatedButton(
@@ -59,5 +59,6 @@ class AboutUs extends StatelessWidget {
         ],
       ),
     );
+
   }
 }

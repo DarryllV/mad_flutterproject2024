@@ -21,12 +21,11 @@ class TopUp extends StatelessWidget {
                     children: [
                       Text('Current Balance', style: TextStyle(fontSize: 30),),
                       SizedBox(height: 40,),
-                      Text('\$20.47', style: TextStyle(fontSize: 30),),
+                      Text('\$18.33', style: TextStyle(fontSize: 30),),
                       SizedBox(height: 30,),
                    ],
                   ),
                 ),
-
               ],
               ),
 
