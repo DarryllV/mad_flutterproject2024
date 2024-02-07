@@ -1,14 +1,28 @@
 import 'package:flutter/material.dart';
 
+class MyIcons {
+  final IconData icon;
+  MyIcons({this.icon});
+}
+
+List iconlist = [
+  MyIcons(icon: Icons.credit_card),
+  MyIcons(icon: Icons.atm),
+  MyIcons(icon: Icons.bus_alert),
+  MyIcons(icon: Icons.train),
+  MyIcons(icon: Icons.bus_alert),
+];
+
 class History extends StatelessWidget {
 
-  final List<String> type = <String>['Public Transport', 'Ez-Link Merchant', 'Ez-Link Merchant'];
-  // final List<Icon> icon = <Icon>[Icons.ac_unit,]
-  final List<String> date = <String>['22 Dec 2023', '', '23 Dec 2023'];
-  final List<String> balance = <String>['\$12.57', '\$10.47', '\$20.47'];
-  final List<String> time = <String>['12:20pm', '1:30pm', '8.12am'];
-  final List<String> cost = <String>['-\$0.87', '-\$2.10', '+\$10.00'];
-  final List<String> purpose = <String>['Train Service', '7-Eleven', 'TopUp'];
+  final List<String> type = <String>['Public Transport', 'Ez-Link Merchant', 'Ez-Link Merchant', 'Public Transport', 'Public Transport'];
+  // final List<IconData> icon = <IconData>[Icons.credit_card, Icons.atm, Icons.bus_alert, Icons.train, Icons.bus_alert];
+  final List<String> date = <String>['22 Dec 2023', '', '23 Dec 2023', '', ''];
+  final List<String> balance = <String>['\$12.57', '\$10.47', '\$20.47', '\$19.40', '\$18.33'];
+  final List<String> time = <String>['12:20pm', '1:30pm', '8.12am', '8.23am', '9.03am'];
+  final List<String> cost = <String>['-\$0.87', '-\$2.10', '+\$10.00', '-\$1.07', '-\$1.07'];
+  final List<String> purpose = <String>['Train Service', '7-Eleven', 'TopUp', 'Bus Service', 'Train Service'];
+  
 
   @override
   Widget build(BuildContext context) {
@@ -43,7 +57,18 @@ class History extends StatelessWidget {
                         Text('${time[index]}', style: TextStyle(fontSize: 20),),
                       ],
                     ),
-                    SizedBox(width: 150,),
+
+                    SizedBox(width: 55,),
+                    
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(iconlist[index].icon, size: 40,),
+                      ],
+                    ),
+
+                    SizedBox(width: 55,),
+
                     Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [

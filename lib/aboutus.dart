@@ -9,25 +9,53 @@ class AboutUs extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
+          SizedBox(height: 20,),
+
           Text('About Us',
             style: TextStyle(
               fontSize: 24,
               fontWeight: FontWeight.bold,
             ),
           ),
+
+          SizedBox(height: 20,),
+
           Container(
-            width: 120,
+            width: 300,
             height: 120,
-            child: CircleAvatar(
-              backgroundImage: AssetImage('images/aboutezlink.jpg'),
+            decoration: BoxDecoration(
+              shape: BoxShape.rectangle,
+              image: const DecorationImage(
+                image: AssetImage('images/aboutezlink.jpg'),
+                fit: BoxFit.fitWidth,
+              )
             ),
           ),
-          SizedBox(height: 15,),
+
+          SizedBox(height: 20,),
+
           Text('Established by the Land Transport Authority on 8 January 2002, EZ-Link pioneered the first large-scale contactless payment system for Singapore’s public transit network. Its core business is in the sale, distribution and management of EZ-Link cards, as well as the clearing and settlement of all EZ-Link transactions generated in transit and non-transit sectors.',
             style: TextStyle(
               fontSize: 16,
             ),
           ),
+
+          SizedBox(height: 20,),
+
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              ElevatedButton(
+                onPressed: null,
+                child: Text('Our Website'),
+                ),
+              
+              ElevatedButton(
+                onPressed: null,
+                child: Text('Our YouTube Channel'),
+                ),
+            ],
+          )
         ],
       ),
     );

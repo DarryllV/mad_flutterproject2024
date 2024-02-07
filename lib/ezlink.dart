@@ -56,7 +56,7 @@ class Ezlink extends StatelessWidget {
                         style: Theme.of(context).textTheme.headline6
                       ),
                       Text(
-                        '\$20.47',
+                        '\$18.33',
                         style: Theme.of(context).textTheme.headline6
                       ),
                       ],
@@ -120,7 +120,7 @@ class Ezlink extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  ElevatedButton(
+                  TextButton(
                       child: Text('Back'),
                       onPressed: () {
                         //initialize the data
